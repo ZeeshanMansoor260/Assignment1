@@ -1,0 +1,425 @@
+    <!DOCTYPE html>
+    
+    <!-- Specify a default language -->
+     
+    <html lang="en">
+     
+        <head>
+    <!-- Define the character set  -->
+     
+            <meta charset="utf-8">
+ 
+    <!-- Load the stylesheets  -->
+
+            <link rel="stylesheet" href="style\">
+            <link rel="icon" href="image\">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link REL="StyleSheet" TYPE="text/css" HREF="myCss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     
+    <!-- Set the title of your application -->
+     
+            <title>Game</title>
+     
+            <!-- 
+                As you may or may not have already
+                realized, HTML5 isn't supported in
+                older versions of internet explorer.
+     
+                To compensate for this, you should
+                use html5shiv to add support to
+                HTML5.
+     
+                The code used to do this, will only
+                work inside the HEAD, however.
+     
+                And for performance sake, this should
+                go after the CSS.
+            -->
+     
+            <!--[if lt IE 9]>
+                <script src="dist/html5shiv.js"></script>
+            <![endif]-->
+     		<style>
+#div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+ul#menu li {
+    display:inline;
+}
+h1 {
+    text-align: center;
+	font-style: italic;
+	color:#663300;
+}
+h2 {
+    text-align: center;
+}
+
+
+
+.tabs {
+  position: relative;   
+  min-height: 250px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #FFFFCC; 
+  padding: 7px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #FFFFFF;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: #E6E6B8;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+		
+  z-index: 1;
+}
+
+img {
+	position:relative;
+	top:30px;
+}
+.menu{
+	position:relative;
+	top:-20px;
+	display: inline;
+}
+body{
+  overflow: hidden;
+}
+#star { 
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    
+	 
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes mymove {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+
+</style>
+        </head>
+     
+    <body style="background-color:#FFAD33;">
+    
+    <div class="container">
+     
+   
+     
+    <header>
+	
+	<h1> Alphabets </h1>
+    
+    </header>
+
+
+	
+	<div class="tabs">
+		
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">A for Apple</label>
+       
+	   
+       <div class="content">
+           <img src="images/image1_apple.jpg" width="240" height="150" >
+       </div> 
+	   
+   </div>
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">B for Ball</label>
+       
+       <div class="content">
+			<div id="circle"></div>
+       </div> 
+   </div>
+    
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">C for Cat</label>
+     
+       <div class="content">
+          <img src="images/image2_cat.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   
+   <div class="tab">
+       <input type="radio" id="tab-4" name="tab-group-1">
+       <label for="tab-4">D for Dog</label>
+     
+       <div class="content">
+          <img src="images/image3_dog.png" width="240" height="150" >
+       </div> 
+   </div>
+   
+   <div class="tab">
+       <input type="radio" id="tab-26" name="tab-group-1">
+       <label for="tab-26">E for Egg</label>
+     
+       <div class="content">
+          <!--<img src="images/image5_elephant.jpg" width="240" height="150" >!-->
+		  <div id="egg"></div>
+       </div> 
+   </div>
+   
+   <div class="tab">
+       <input type="radio" id="tab-5" name="tab-group-1">
+       <label for="tab-5">F for Frog</label>
+     
+       <div class="content">
+          <img src="images/image4_Frog.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   
+    <div class="tab">
+       <input type="radio" id="tab-6" name="tab-group-1">
+       <label for="tab-6">G for Goat</label>
+     
+       <div class="content">
+          <img src="images/image5_goat.png" width="240" height="150" >
+       </div> 
+   </div>
+    <div class="tab">
+       <input type="radio" id="tab-7" name="tab-group-1">
+       <label for="tab-7">H for Hen</label>
+     
+       <div class="content">
+          <img src="images/image6_hen.jpg" width="240" height="150" >
+       </div> 
+   </div>
+    <div class="tab">
+       <input type="radio" id="tab-8" name="tab-group-1">
+       <label for="tab-8">I for Igloo</label>
+     
+       <div class="content">
+          <img src="images/image7_igloo.jpg" width="240" height="150" >
+       </div> 
+   </div>
+    <div class="tab">
+       <input type="radio" id="tab-9" name="tab-group-1">
+       <label for="tab-9">J for Jar</label>
+     
+       <div class="content">
+          <img src="images/image8_jar1.jpg" width="240" height="150" >
+       </div> 
+   </div>
+    <div class="tab">
+       <input type="radio" id="tab-10" name="tab-group-1">
+       <label for="tab-10">K for Kite</label>
+     
+       <div class="content">
+          <img src="images/image9_Kite.png" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-11" name="tab-group-1">
+       <label for="tab-11">L for Lamp</label>
+     
+       <div class="content">
+          <img src="images/image10_lamp.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-12" name="tab-group-1">
+       <label for="tab-12">M for Moon</label>
+     
+       <div class="content">
+		  <div id="moon"></div>
+          <!--<img src="images/image5_elephant.jpg" width="240" height="150" >!-->
+       </div> 
+   </div>
+   
+		
+		<div class="tab">
+       <input type="radio" id="tab-13" name="tab-group-1">
+       <label for="tab-13">N for Net</label>
+     
+       <div class="content">
+          <img src="images/image11_net.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   
+   <div class="tab">
+       <input type="radio" id="tab-27" name="tab-group-1">
+       <label for="tab-27"></label>
+     
+       <div class="content">
+          
+       </div> 
+   </div>
+    
+</div>
+
+	<div class="tabs">
+		
+   <div class="tab">
+       <input type="radio" id="tab-14" name="tab-group-1">
+       <label for="tab-14">O for Owl</label>
+     
+       <div class="content">
+          <img src="images/image12_owl.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-15" name="tab-group-1">
+       <label for="tab-15">P for Pen</label>
+     
+       <div class="content">
+          <img src="images/image13_pen.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   
+   <div class="tab">
+       <input type="radio" id="tab-16" name="tab-group-1">
+       <label for="tab-16">Q for Quail</label>
+     
+       <div class="content">
+          <img src="images/image14_quail.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-17" name="tab-group-1">
+       <label for="tab-17">R for Rabbit</label>
+     
+       <div class="content">
+          <img src="images/image15_rabbit.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-18" name="tab-group-1">
+       <label for="tab-18">S for Star</label>
+     
+       <div class="content">
+          <div id="star"></div>
+       </div> 
+   </div>
+   
+   <div class="tab">
+       <input type="radio" id="tab-19" name="tab-group-1">
+       <label for="tab-19">T for Tree</label>
+     
+       <div class="content">
+          <img src="images/image16_tree.png" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-20" name="tab-group-1">
+       <label for="tab-20">U for Umberala</label>
+     
+       <div class="content">
+          <img src="images/image17_umberalla.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-21" name="tab-group-1">
+       <label for="tab-21">V for Van</label>
+     
+       <div class="content">
+          <img src="images/image18_van.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-22" name="tab-group-1">
+       <label for="tab-22">W for Watch</label>
+     
+       <div class="content">
+          <img src="images/image19_watch.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-23" name="tab-group-1">
+       <label for="tab-23">X for Xylophone</label>
+     
+       <div class="content">
+          <img src="images/image20_xylophone.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-24" name="tab-group-1">
+       <label for="tab-24">Y for Yoyo</label>
+     
+       <div class="content">
+          <img src="images/image21_yoyo.jpg" width="240" height="150" >
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-25" name="tab-group-1">
+       <label for="tab-25">Z for Zebra</label>
+     
+       <div class="content">
+          <img src="images/image22_zebra.png" width="240" height="150" >
+		  
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" id="tab-26" name="tab-group-1">
+       <label for="tab-26"></label>
+     
+       <div class="content">
+          
+       </div> 
+   </div>
+
+     
+    </div>
+
+    
+	</div>
+	<div class="menu">
+		<div class="row">
+			<div class="col-md-4" style="float:left;">
+				<form action="index.html">
+					<input id="gobutton" type="submit" value="Home" />
+				</form>
+			</div>	
+		
+			<div class="col-md-4" style="float:right;">
+				<form action="quiz.html">
+					<input id="gobutton" type="submit" value="Take Quiz" />
+				</form>
+			</div>
+			<div class="col-md-4" style="float:right;">
+				<audio loop="loop" autoplay="autoplay" controls="controls">  
+					 
+					<source src="audio/abc.mp3" />  
+				</audio> 
+			</div>	
+		</div>
+	</div>	
+</body>
+</html>
